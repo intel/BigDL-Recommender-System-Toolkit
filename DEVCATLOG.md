@@ -1,14 +1,18 @@
 # Building Recommender Systems with Intel® Recsys Toolkit
 
-Use Intel® Recsys Toolkit, also known as BigDL Friesian, to easily build large-scale distributed training and online serving
+## Introduction
+
+Building an end-to-end recommender system that meets production demands from scratch could be rather challenging.
+Intel® Recsys Toolkit, i.e. BigDL Friesian, can greatly help relieve the efforts of building distributed offline training and online serving pipelines. 
+
+Learn to Use Intel® Recsys Toolkit, also known as BigDL Friesian, to easily build large-scale distributed training and online serving
 pipelines for modern recommender systems. This page demonstrates how to use this toolkit to build a recommendation solution for the Wide & Deep Learning workflow.
 
 Check out more toolkits and reference implementations in the [Developer Catalog](https://developer.intel.com/aireferenceimplementations).
 
-## Overview
-Building an end-to-end recommender system that meets production demands from scratch could be rather challenging.
-Intel® Recsys Toolkit, i.e. BigDL Friesian, can greatly help relieve the efforts of building distributed offline training
-and online serving pipelines. The recommendation solutions built with the toolkit are optimized on Intel® Xeon
+## Solution Technical Overview
+
+The recommendation solutions built with the toolkit are optimized on Intel® Xeon
 and could be directly deployed on existing large clusters to handle production big data.
 
 Highlights and benefits of Intel® Recsys Toolkit are as follows:
@@ -21,7 +25,7 @@ Highlights and benefits of Intel® Recsys Toolkit are as follows:
 Intel® Recsys Toolkit is a domain-specific submodule named Friesian in BigDL focusing on recommendation workloads, visit the BigDL Friesian [GitHub repository](https://github.com/intel-analytics/BigDL/tree/main/python/friesian) and
 [documentation page](https://bigdl.readthedocs.io/en/latest/doc/Friesian/index.html) for more details.
 
-## Hardware Requirements
+## Validated Hardware Requirements
 
 Intel® Recsys Toolkit and the example workflow shown below could run widely on Intel® Xeon® series processors.
 
