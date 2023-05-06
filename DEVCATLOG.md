@@ -2,11 +2,9 @@
 
 ## Introduction
 
-Building an end-to-end recommender system that meets production demands from scratch could be rather challenging.
-Intel® Recsys Toolkit, i.e. BigDL Friesian, can greatly help relieve the efforts of building distributed offline training and online serving pipelines. The recommendation solutions built with the toolkit are optimized on Intel® Xeon® processors, 
-and could be directly deployed on existing large clusters to handle production big data.
+Building a recommender system from scratch that meets production demands can present a significant challenge. However, you can leverage the Intel® Recsys Toolkit, i.e. BigDL Friesian, to streamline the process of building distributed offline training and online serving pipelines. The toolkit optimizes recommendation solutions for Intel® Xeon® processors, making them well-suited for deployment on large clusters to handle big data in production environments.
 
-Learn to Use Intel® Recsys Toolkit, also known as BigDL Friesian, to easily build large-scale distributed training and online serving
+Learn to Use Intel® Recsys Toolkit, to easily build large-scale distributed training and online serving
 pipelines for modern recommender systems. This page demonstrates how to use this toolkit to build a recommendation solution for the Wide & Deep Learning workflow.
 
 Check out more toolkits and reference implementations in the [Developer Catalog](https://developer.intel.com/aireferenceimplementations).
