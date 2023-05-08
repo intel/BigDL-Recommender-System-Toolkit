@@ -1,4 +1,4 @@
-# Building Recommender Solutions with Intel® BigDL Recommender System Toolkit
+# Building Recommender Solutions with Intel® *BigDL Recommender System* Toolkit
 
 ## Introduction
 
