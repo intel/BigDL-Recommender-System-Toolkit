@@ -1,31 +1,30 @@
-# Building Recommender Systems with Intel® Recsys Toolkit
+# Building Recommender Solutions with Intel® *BigDL Recommender System* Toolkit
 
-Use Intel® Recsys Toolkit, also known as BigDL Friesian, to easily build large-scale distributed training and online serving
-pipelines for modern recommender systems. This page demonstrates how to use this toolkit to build a recommendation solution for the Wide & Deep Learning workflow.
+## Introduction
+
+Building a recommender system from scratch that meets production demands can present a significant challenge. However, you can leverage the Intel® BigDL Recommender System Toolkit, i.e. BigDL Friesian, to streamline the process of building large-scale distributed offline training and online serving pipelines for modern recommender systems. The toolkit optimizes recommendation solutions for Intel® Xeon® processors, making them well-suited for deployment on large clusters to handle big data in production environments.
+
+This page demonstrates how to use Intel® BigDL Recommender System Toolkit to build a recommendation solution for the Wide & Deep Learning workflow.
 
 Check out more toolkits and reference implementations in the [Developer Catalog](https://developer.intel.com/aireferenceimplementations).
 
-## Overview
-Building an end-to-end recommender system that meets production demands from scratch could be rather challenging.
-Intel® Recsys Toolkit, i.e. BigDL Friesian, can greatly help relieve the efforts of building distributed offline training
-and online serving pipelines. The recommendation solutions built with the toolkit are optimized on Intel® Xeon
-and could be directly deployed on existing large clusters to handle production big data.
+## Solution Technical Overview
 
-Highlights and benefits of Intel® Recsys Toolkit are as follows:
+Highlights and benefits of Intel® BigDL Recommender System Toolkit are as follows:
 
 - Provide various built-in distributed feature engineering operations to efficiently process user and item features.
 - Support the distributed training of any standard TensorFlow or PyTorch model. 
 - Implement a complete, highly available and scalable pipeline for online serving (including recall and ranking) with low latency.
 - Include out-of-box reference use cases of many popular recommendation algorithms.
 
-Intel® Recsys Toolkit is a domain-specific submodule named Friesian in BigDL focusing on recommendation workloads, visit the BigDL Friesian [GitHub repository](https://github.com/intel-analytics/BigDL/tree/main/python/friesian) and
+Intel® BigDL Recommender System Toolkit is a domain-specific submodule named Friesian in BigDL focusing on recommendation workloads, visit the BigDL Friesian [GitHub repository](https://github.com/intel-analytics/BigDL/tree/main/python/friesian) and
 [documentation page](https://bigdl.readthedocs.io/en/latest/doc/Friesian/index.html) for more details.
 
-## Hardware Requirements
+## Validated Hardware Requirements
 
-Intel® Recsys Toolkit and the example workflow shown below could run widely on Intel® Xeon® series processors.
+Intel® BigDL Recommender System Toolkit and the example workflow shown below could run widely on Intel® Xeon® series processors.
 
-|| Recommended Hardware         |
+|| Supported Hardware         |
 |---| ---------------------------- |
 |CPU| Intel® Xeon® Scalable processors with Intel®-AVX512|
 |Memory|>10G|
@@ -36,7 +35,7 @@ Intel® Recsys Toolkit and the example workflow shown below could run widely on 
 
 <img src="https://github.com/intel-analytics/BigDL/blob/main/scala/friesian/src/main/resources/images/architecture.png" width="80%" />
 
-The architecture above illustrates the main components in Intel® Recsys Toolkit.
+The architecture above illustrates the main components in Intel® BigDL Recommender System Toolkit.
 
 - The offline training workflow is implemented based on Spark, Ray and BigDL to efficiently scale the data processing and DNN model training on large Xeon clusters.
 - The nearline workflow loads the features into the key-value store and builds the index for vector search.
@@ -56,11 +55,11 @@ You are highly recommended to use the toolkit under the following system and sof
 
 ### 2. Download the Toolkit Repository
 
-Create a working directory for the example workflow of Intel® Recsys Toolkit and clone the [Main
+Create a working directory for the example workflow of Intel® BigDL Recommender System Toolkit and clone the [Main
 Repository](https://github.com/intel-analytics/BigDL) repository into your working
-directory. Intel® Recsys Toolkit is included in the BigDL project and
+directory. Intel® BigDL Recommender System Toolkit is included in the BigDL project and
 this step downloads the example scripts in BigDL to demonstrate the toolkit.
-Follow the steps in the next section to easily install Intel® Recsys Toolkit via [Docker](#31-install-from-docker) or [pip](#32-install-from-pypi-on-bare-metal).
+Follow the steps in the next section to easily install Intel® BigDL Recommender System Toolkit via [Docker](#31-install-from-docker) or [pip](#32-install-from-pypi-on-bare-metal).
 
 ```
 mkdir ~/work && cd ~/work
@@ -69,7 +68,7 @@ cd BigDL
 ```
 
 ### 3. Installation
-You can install Intel® Recsys Toolkit either using our provided [Docker image](#31-install-from-docker) (recommended way) or on [bare metal](#32-install-from-pypi-on-bare-metal) according to your environment and preference.
+You can install Intel® BigDL Recommender System Toolkit either using our provided [Docker image](#31-install-from-docker) (recommended way) or on [bare metal](#32-install-from-pypi-on-bare-metal) according to your environment and preference.
 
 #### 3.1 Install from Docker
 Follow these instructions to set up and run our provided Docker image.
@@ -164,7 +163,7 @@ python generate_dummy_data.py 100000 recsys_data/
 
 ### 2. Run Training Workflow
 
-The training workflow of Intel® Recsys Toolkit will preprocess the dataset, train the [Wide & Deep Learning](https://arxiv.org/abs/1606.07792) model (for ranking) and two-tower model (for embeddings) with the processed data.
+The training workflow of Intel® BigDL Recommender System Toolkit will preprocess the dataset, train the [Wide & Deep Learning](https://arxiv.org/abs/1606.07792) model (for ranking) and two-tower model (for embeddings) with the processed data.
 
 Use these commands to run the training workflow:
 
@@ -247,7 +246,7 @@ Check out the logs of the console for training results:
 
 ### 3. Run Online Serving Pipeline Using Docker
 
-After completing the training pipeline, you can use the trained model to deploy and test the online serving pipeline of Intel® Recsys Toolkit.
+After completing the training pipeline, you can use the trained model to deploy and test the online serving pipeline of Intel® BigDL Recommender System Toolkit.
 
 You are highly recommended to run the online serving pipeline using our provided Docker image as instructed in this section.
 
@@ -361,17 +360,17 @@ Output:
 ---
 
 ## Summary and Next Steps
-This page demonstrates how to use Intel® Recsys Toolkit to build end-to-end training and serving pipelines for Wide & Deep Learning model.
+This page demonstrates how to use Intel® BigDL Recommender System Toolkit to build end-to-end training and serving pipelines for Wide & Deep Learning model.
 You can continue to explore more use cases or recommendation models provided in the toolkit or try to use the toolkit to build
 the recommender system on your own dataset!
 
 ## Learn More
-For more information about Intel® Recsys Toolkit or to read about other relevant workflow
+For more information about Intel® BigDL Recommender System Toolkit or to read about other relevant workflow
 examples, see these guides and software resources:
 
-- More recommendation models and use cases in the recsys toolkit: https://github.com/intel-analytics/BigDL/tree/main/python/friesian/example
-- To scale the training workflow of the recsys toolkit to Kubernetes clusters: https://bigdl.readthedocs.io/en/latest/doc/Orca/Tutorial/k8s.html
-- To scale the online serving workflow of the recsys toolkit to Kubernetes clusters: https://github.com/intel-analytics/BigDL/tree/main/apps/friesian-server-helm
+- More recommendation models and use cases in the BigDL Recommender System Toolkit: https://github.com/intel-analytics/BigDL/tree/main/python/friesian/example
+- To scale the training workflow of the BigDL Recommender System Toolkit to Kubernetes clusters: https://bigdl.readthedocs.io/en/latest/doc/Orca/Tutorial/k8s.html
+- To scale the online serving workflow of the BigDL Recommender System Toolkit to Kubernetes clusters: https://github.com/intel-analytics/BigDL/tree/main/apps/friesian-server-helm
 - [Intel® AI Analytics Toolkit (AI Kit)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-analytics-toolkit.html)
 - [Azure Machine Learning Documentation](https://learn.microsoft.com/en-us/azure/machine-learning/)
 
