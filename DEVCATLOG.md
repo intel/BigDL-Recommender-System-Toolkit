@@ -1,4 +1,4 @@
-# Building Recommender Solutions with Intel® *BigDL Recommender System* Toolkit
+# Building Recommender Solutions with Intel® *BigDL Recommender System Toolkit*
 
 ## Introduction
 
@@ -368,9 +368,9 @@ the recommender system on your own dataset!
 For more information about Intel® BigDL Recommender System Toolkit or to read about other relevant workflow
 examples, see these guides and software resources:
 
-- More recommendation models and use cases in the BigDL Recommender System Toolkit: https://github.com/intel-analytics/BigDL/tree/main/python/friesian/example
-- To scale the training workflow of the BigDL Recommender System Toolkit to Kubernetes clusters: https://bigdl.readthedocs.io/en/latest/doc/Orca/Tutorial/k8s.html
-- To scale the online serving workflow of the BigDL Recommender System Toolkit to Kubernetes clusters: https://github.com/intel-analytics/BigDL/tree/main/apps/friesian-server-helm
+- More recommendation models and use cases in the Intel® BigDL Recommender System Toolkit: https://github.com/intel-analytics/BigDL/tree/main/python/friesian/example
+- To scale the training workflow of the Intel® BigDL Recommender System Toolkit to Kubernetes clusters: https://bigdl.readthedocs.io/en/latest/doc/Orca/Tutorial/k8s.html
+- To scale the online serving workflow of the Intel® BigDL Recommender System Toolkit to Kubernetes clusters: https://github.com/intel-analytics/BigDL/tree/main/apps/friesian-server-helm
 - [Intel® AI Analytics Toolkit (AI Kit)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-analytics-toolkit.html)
 - [Azure Machine Learning Documentation](https://learn.microsoft.com/en-us/azure/machine-learning/)
 
