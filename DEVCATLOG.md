@@ -362,13 +362,15 @@ Output:
 ## Summary and Next Steps
 This page demonstrates how to use Intel® BigDL Recommender System Toolkit to build end-to-end training and serving pipelines for Wide & Deep Learning model.
 You can continue to explore more use cases or recommendation models provided in the toolkit or try to use the toolkit to build
-the recommender system on your own dataset!
+your own recommender system!
+
+### How to customize this workflow/use case
+You can easily do customizations for recommendation use cases. The toolkit supports many more feature engineering operations for other datasets, such as [Amazon Book Reviews dataset](https://github.com/intel-analytics/BigDL/blob/main/python/friesian/example/dien/dien_preprocessing.py). In the meantime, the toolkit also supports many other widely used recommender models with corresponding [use cases](https://github.com/intel-analytics/BigDL/tree/main/python/friesian/example).
 
 ## Learn More
 For more information about Intel® BigDL Recommender System Toolkit or to read about other relevant workflow
 examples, see these guides and software resources:
 
-- More recommendation models and use cases in the Intel® BigDL Recommender System Toolkit: https://github.com/intel-analytics/BigDL/tree/main/python/friesian/example
 - To scale the training workflow of the Intel® BigDL Recommender System Toolkit to Kubernetes clusters: https://bigdl.readthedocs.io/en/latest/doc/Orca/Tutorial/k8s.html
 - To scale the online serving workflow of the Intel® BigDL Recommender System Toolkit to Kubernetes clusters: https://github.com/intel-analytics/BigDL/tree/main/apps/friesian-server-helm
 - [Intel® AI Analytics Toolkit (AI Kit)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-analytics-toolkit.html)
