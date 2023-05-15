@@ -258,7 +258,7 @@ Note that we have already prepared scripts to easily launch the Docker container
 Pull the provided Docker image:
 
 ```
-docker pull intelanalytics/friesian-serving:2.2.0-SNAPSHOT
+docker pull intelanalytics/friesian-serving:latest
 ```
 
 
