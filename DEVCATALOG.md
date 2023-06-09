@@ -117,7 +117,7 @@ docker run -a stdout \
 
 Run these commands to install additional software used for the workflow in the Docker container:
 ```
-pip install tensorflow==2.9.0
+pip install tensorflow==2.12.0
 ```
 
 
@@ -140,7 +140,7 @@ Run these commands to set up the workflow's ``conda`` environment and install re
 conda create -n recsys python=3.9 --yes
 conda activate recsys
 pip install --pre --upgrade bigdl-friesian-spark3
-pip install tensorflow==2.9.0
+pip install tensorflow==2.12.0
 ```
 
 ---
